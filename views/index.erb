@@ -1,5 +1,21 @@
 <html>
-  <head></head>
+  <head>
+  <style>
+      body {
+        <% if message == "Way too high!" %>
+        background: #FF0000;
+        <% elsif message == "Way too low!" %>
+        background: #FF0000;
+        <% elsif message == "Too low!" %>
+        background: #FFCCCC;
+        <% elsif message == "Too high!" %>
+        background: #FFCCCC;
+        <% else %>
+        background: #33CC33;
+        <%end%>
+      }
+    </style>
+    </head>
   <body>
     <p>
       <% if number == params['guess'].to_i %>
@@ -7,7 +23,6 @@
           The secret number is <%= number %>!
         </p>
         <%end%>
-
       <%= message %>
     </p>
 

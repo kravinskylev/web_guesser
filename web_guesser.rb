@@ -14,19 +14,19 @@ def check(guess)
   # end
 
   if (guess - NUMBER) > 5
-    @@count += 1
+    # @@count += 1
     "Way too high!"
   elsif (NUMBER - guess) > 5
-    @@count += 1
+    # @@count += 1
     "Way too low!"
   elsif guess > NUMBER
-    @@count += 1
+    # @@count += 1
     "Too high!"
   elsif NUMBER > guess
-    @@count += 1
+    # @@count += 1
     "Too low!"
   elsif guess == NUMBER
-    @@count = 0
+    # @@count = 0
     "Correct!"
   end
 end
